@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linked List Visualizer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Linked List Visualizer</h1>
+        <input type="text" id="nodeData" placeholder="Enter node value">
+        <input type="number" id="nodeIndex" placeholder="Enter index (starts from 1)" min="1">
+        <button onclick="insertAtPosition()">Insert at Position</button>
+        <button onclick="deleteNode()">Delete Node</button>
+
+        <div id="linked-list" class="linked-list"></div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
